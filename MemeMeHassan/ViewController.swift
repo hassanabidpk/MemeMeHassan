@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
 	
@@ -123,6 +124,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 		
 		return keyboardSize.CGRectValue().height
 	
+	}
+	
+	func save() {
+	
+		let meme = Meme(text: topTextField.text!, image:imagePicker.image, memedImage: nil)
 	}
 	
 	
